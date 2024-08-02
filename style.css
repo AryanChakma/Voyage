@@ -1,0 +1,177 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,body{
+  height: 100%;
+  width: 100%;
+}
+#main{
+  background-color: #f8f8f8;
+  position: relative;
+}
+#nav{
+  padding: 2vw 3vw;
+  width: 100%;
+}
+#nav h1{
+  height: 100%;
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: cursive;
+  font-size: 45px;
+  letter-spacing: -5px;
+  text-transform: uppercase;
+}
+#center{
+  height: 90%;
+  width: 100%;
+  padding: 4vw;
+  position: relative;
+}
+#content{
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+#content img{
+  height: 100%;
+  width: 100%;
+}
+#scoller{
+  height: 40vh;
+  width: 100%;
+  white-space: nowrap;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+#container{
+  height: 100%;
+  width: 100%;
+  display: inline-block;
+  padding: 1vw;
+  animation-name: anime;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+#container video{
+  height: 100%;
+  width: 15%;
+  margin: 1vw 0.8vw;
+  border-radius: 10%;
+  object-fit: cover;
+}
+#container img{
+  height: 100%;
+  width: 15%;
+  margin: 1vw 0.8vw;
+  border-radius: 10%;
+  object-fit: cover;
+  object-position: right;
+}
+@keyframes anime {
+  from{
+    transform: translateX(0);
+  }
+  to{
+    transform: translateX(-100%);
+  }
+}
+#page2{
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5vw;
+}
+#page2-part1{
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 12vh;
+  font-family: cursive;
+}
+#page2-part1 img{
+  height: 1em;
+}
+#page2-part2{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1vw;
+}
+#page2-part2 img{
+  height:70vh;
+  width: 70vw;
+  border-radius: 20px;
+}
+#part2-txt{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 1.2vw;
+}
+#page3{
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 4vw 0;
+}
+#page3-part1{
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 12vh;
+  font-family: cursive;
+}
+#page3-part1 img{
+  height: 1em;
+}
+#page3-part2{
+  margin-top: 5vh;
+}
+.elem{
+  height: 150px;
+  width: 100%;
+  position: relative;
+  border-bottom: 1px solid #38383864;
+  display: flex;
+  align-items: center;
+  padding: 0 2vw;
+  overflow: hidden;
+}
+.elem h2{
+  text-transform: uppercase;
+  font-size: 3vw;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  position: relative;
+  z-index: 9;
+}
+.elem .overlay{
+  height: 100%;
+  width: 100%;
+  background-color: orange;
+  position: absolute;
+  left: 0;
+  top: -100%;
+  transition: all ease 0.2s;
+}
+.elem:hover .overlay{
+  top: 0;
+}
+#fixed-image{
+  height: 25vw;
+  width: 20vw;
+  background-color: red;
+  border-radius: 10px;
+  position: fixed;
+  z-index: 99;
+  left: 79%;
+  top: 25%;
+  display: none;
+  background-size: cover;
+  background-position: center;
+}
