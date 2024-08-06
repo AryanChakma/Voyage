@@ -58,13 +58,7 @@ html,body{
   animation-iteration-count: infinite;
   animation-timing-function: linear;
 }
-#container video{
-  height: 100%;
-  width: 15%;
-  margin: 1vw 0.8vw;
-  border-radius: 10%;
-  object-fit: cover;
-}
+
 #container img{
   height: 100%;
   width: 15%;
@@ -142,6 +136,7 @@ html,body{
   align-items: center;
   padding: 0 2vw;
   overflow: hidden;
+  cursor: pointer;
 }
 .elem h2{
   text-transform: uppercase;
@@ -174,4 +169,51 @@ html,body{
   display: none;
   background-size: cover;
   background-position: center;
+}
+#page4{
+  height: 80vh;
+  width: 100%;
+}
+#page4 img{
+  height: 100vh;
+  width: 100%;
+}
+@media (max-width:600px){
+  #nav{
+    padding: 0 5vw;
+    width: 100%;
+  }
+  #nav h1{
+    width: 40%;
+    justify-content: flex-start;
+    font-family: cursive;
+    font-size: 24px;
+    text-transform: uppercase;
+  }
+  #scoller{
+    height: 20vh;
+    width: 100%;
+    white-space: nowrap;
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+  #container{
+    height: 100%;
+    width: fit-content;
+    display: inline-block;
+    padding: 1vw;
+    animation-name: anime;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+  
+  #container img{
+    height: 100%;
+    width: 14.5%;
+    margin: 1vw 0.8vw;
+    border-radius: 10%;
+    object-fit: cover;
+    object-position: right;
+  }
 }
